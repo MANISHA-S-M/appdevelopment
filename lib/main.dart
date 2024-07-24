@@ -47,7 +47,7 @@ class _MyHomePageState extends StatelessWidget{
       flex: 2,
       child: Container(
     color: Colors.blue,
-
+hgfhjhhg
     ),
     ),
     ],
