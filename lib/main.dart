@@ -31,15 +31,24 @@ class _MyHomePageState extends StatelessWidget{
         body:Container(
           child: Column(
              children: [
-               f
-               Container(
-    color: Colors.orange,
-
-    ),
-   Expanded(
+               Expanded(
+                   child:Container(
+                      color: Colors.orange,
+          ),
+        ),
+     Expanded(
      flex: 1,
        child: Container(
     color: Colors.green,
+         child: ListView.builder(itemBuilder: (context,index)=>Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: SizedBox(
+             width: 100,
+             child: CircleAvatar(
+               backgroundColor: Colors.black,
+             ),
+           ),
+         ),itemCount: 10,scrollDirection: Axis.horizontal),
 
     ),
    ),
@@ -47,12 +56,23 @@ class _MyHomePageState extends StatelessWidget{
       flex: 2,
       child: Container(
     color: Colors.blue,
-hgfhjhhg
+    child: ListView.builder(itemBuilder: (context,index)=>Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ListTile(
+      leading:  CircleAvatar(
+      backgroundColor: Colors.black,
+      ),
+       title:Text('name'),
+        subtitle: Text('mob no'),
+
+      ),
     ),
     ),
-    ],
+      ),
     ),
-    )
+      ]
+    ),
+    ),
     );
     }
 }
